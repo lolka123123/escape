@@ -5,30 +5,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="icon/all.min.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/media.css">
     <title>Document</title>
 </head>
 
+
 <body>
+
+
     <header>
-        <nav class="nav">
-            <div class="container nav-content">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
                 <a class="nav-logo" href="">Escape.</a>
-                <ul class="nav-list">
-                    <li><a href="" class="nav-link">Home</a></li>
-                    <li><a href="" class="nav-link">Categories</a></li>
-                    <li><a href="" class="nav-link">About</a></li>
-                    <li><a href="" class="nav-link">Contact</a></li>
-                </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Categories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="nav-list">
+                        <li><a href="" class="nav-link">LogIn</a></li>
+                        <li><a href="" class="nav-link">Registration</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
+
         <div class="intro">
-            <div class="container intro-content">
-                <h1 class="intro-title">Let's do it together.</h1>
-                <p class="intro-text">We travel the world in search of stories. Come along for the ride.</p>
-                <a class="intro-link" href="">View Latest Posts</a>
+            <div class="container">
+                <div class="intro-content">
+                    <h1 class="intro-title">Let's do it together.</h1>
+                    <p class="intro-text">We travel the world in search of stories. Come along for the ride.</p>
+                    <a class="intro-link" href="">View Latest Posts</a>
+                </div>
             </div>
         </div>
     </header>
@@ -47,132 +73,219 @@
         </section>
         <section class="section2">
             <h2 class="section2-title">Featured Posts</h2>
-            <div class="container section2-content">
-                <div class="section2-img">
-                    <img class="section2-img-img" src="img/IMAGE (1).png" alt="">
-                    <div class="section2-img-info">
-                        <p class="section2-img-title">The Road Ahead</p>
-                        <p class="section2-img-text">The road ahead might be paved - it might not be.</p>
-                        <img class="section2-img-ava" src="img/AVA.png" alt="">
-                        <p class="section2-img-name">Mat Vogels</p>
-                        <p class="section2-img-data">September 25, 2015</p>
-                    </div>
-                </div>
-                <div class="section2-img">
-                    <img class="section2-img-img" src="img/IMAGE (9).png" alt="">
-                    <div>
-                        <p class="section2-img-logo">Adventure</p>
-                    <p class="section2-img-title">From Top Down</p>
-                    <p class="section2-img-text">Once a year, go someplace you’ve never been before.</p>
-                    <img class="section2-img-ava" src="img/AVA2.png" alt="">
-                    <p class="section2-img-name">William Wong</p>
-                    <p class="section2-img-data">September 25, 2015</p>
-                    </div>
-                </div>
+            <div class="container">
+                <div class="section2-content">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <a href="#" class="carousel-item active">
+                                <div class="section2-img">
+                                    <img class="section2-img-img" src="img/IMAGE (1).png" alt="">
+                                    <div class="section2-img-info">
+                                        <p class="section2-img-category">Nature</p>
+                                        <div class="section2-img-words">
+                                            <p class="section2-img-title">The Road Ahead</p>
+                                            <p class="section2-img-text">The road ahead might be paved - it might not
+                                                be.
+                                            </p>
+                                        </div>
+                                        <div class="section2-img-profile">
+                                            <img class="section2-img-profile-ava" src="img/AVA.png" alt="">
+                                            <p class="section2-img-profile-name">Mat Vogels</p>
+                                        </div>
 
-            </div>
+                                        <p class="section2-img-data">September 25, 2015</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="carousel-item">
+                                <div class="section2-img">
+                                    <img class="section2-img-img" src="img/IMAGE (9).png" alt="">
+                                    <div>
+                                        <p class="section2-img-category">Adventure</p>
+                                        <div class="section2-img-words">
+                                            <p class="section2-img-title">From Top Down</p>
+                                            <p class="section2-img-text">Once a year, go someplace you’ve never been
+                                                before.
+                                            </p>
+                                        </div>
+                                        <div class="section2-img-profile">
+                                            <img class="section2-img-profile-ava" src="img/AVA2.png" alt="">
+                                            <p class="section2-img-profile-name">William Wong</p>
+                                        </div>
+
+                                        <p class="section2-img-data">September 25, 2015</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="carousel-item">
+                                <div class="section2-img">
+                                    <img class="section2-img-img" src="img/IMAGE (1).png" alt="">
+                                    <div class="section2-img-info">
+                                        <p class="section2-img-category">Nature</p>
+                                        <div class="section2-img-words">
+                                            <p class="section2-img-title">The Road Ahead</p>
+                                            <p class="section2-img-text">The road ahead might be paved - it might not
+                                                be.
+                                            </p>
+                                        </div>
+                                        <div class="section2-img-profile">
+                                            <img class="section2-img-profile-ava" src="img/AVA.png" alt="">
+                                            <p class="section2-img-profile-name">Mat Vogels</p>
+                                        </div>
+
+                                        <p class="section2-img-data">September 25, 2015</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                </div>
         </section>
         <section class="section3">
             <h3 class="section3-title">Most Recent</h3>
-            <div class="container section3-content">
-                <div class="section3-card">
-                    <img src="img/IMAGE (2).png" alt="">
-                    <p class="section3-card-title">Still Standing Tall</p>
-                    <p class="section3-card-text">Life begins at the end of your comfort zone.</p>
-                    <div class="section3-card-info">
-                        <div class="section3-card-info-left">
-                            <img src="img/AVA2.png" alt="">
-                            <p class="section3-card-info-name">William Wong</p>
+            <div class="container">
+                <div class="section3-content">
+                    <div class="section3-card">
+                        <a href="#" class="section3-card-main">
+                            <img class="section3-card-img" src="img/IMAGE (2).png" alt="">
+                            <p class="section3-card-category">Category</p>
+                            <p class="section3-card-title">Still Standing Tall</p>
+                            <p class="section3-card-text">Life begins at the end of your comfort zone.</p>
+                        </a>
+                        <div class="section3-card-info">
+                            <a href="#" class="section3-card-info-left">
+                                <img class="section3-card-info-left-ava" src="img/AVA2.png" alt="">
+                                <p class="section3-card-info-name">William Wong</p>
+                            </a>
+                            <p class="section3-card-info-data">9/25/2015</p>
                         </div>
-                        <p class="section3-card-info-data">9/25/2015</p>
                     </div>
-                </div>
-                <div class="section3-card">
-                    <img src="img/IMAGE (3).png" alt="">
-                    <p class="section3-card-title">Sunny Side Up</p>
-                    <p class="section3-card-text">No place is ever as bad as they tell you it’s going to be.</p>
-                    <div class="section3-card-info">
-                        <div class="section3-card-info-left">
-                            <img src="img/AVA.png" alt="">
-                            <p class="section3-card-info-name">Mat Vogels</p>
+                    <div class="section3-card">
+                        <a href="#" class="section3-card-main">
+                            <img class="section3-card-img" src="img/IMAGE (3).png" alt="">
+                            <p class="section3-card-category">Category</p>
+                            <p class="section3-card-title">Sunny Side Up</p>
+                            <p class="section3-card-text">No place is ever as bad as they tell you it’s going to be.</p>
+                        </a>
+                        <div class="section3-card-info">
+                            <a href="#" class="section3-card-info-left">
+                                <img class="section3-card-info-left-ava" src="img/AVA.png" alt="">
+                                <p class="section3-card-info-name">Madt Vogels</p>
+                            </a>
+                            <p class="section3-card-info-data">9/25/2015</p>
                         </div>
-                        <p class="section3-card-info-data">9/25/2015</p>
                     </div>
-                </div>
-                <div class="section3-card">
-                    <img src="img/IMAGE (4).png" alt="">
-                    <p class="section3-card-title">Water Falls</p>
-                    <p class="section3-card-text">We travel not to escape life, but for life not to escape us.</p>
-                    <div class="section3-card-info">
-                        <div class="section3-card-info-left">
-                            <img src="img/AVA.png" alt="">
-                            <p class="section3-card-info-name">Mat Vogels</p>
+                    <div class="section3-card">
+                        <a href="#" class="section3-card-main">
+                            <img class="section3-card-img" src="img/IMAGE (4).png" alt="">
+                            <p class="section3-card-category">Category</p>
+                            <p class="section3-card-title">Water Falls</p>
+                            <p class="section3-card-text">We travel not to escape life, but for life not to escape us.
+                            </p>
+                        </a>
+                        <div class="section3-card-info">
+                            <a href="#" class="section3-card-info-left">
+                                <img class="section3-card-info-left-ava" src="img/AVA.png" alt="">
+                                <p class="section3-card-info-name">Mat Vogels</p>
+                            </a>
+                            <p class="section3-card-info-data">9/25/2015</p>
                         </div>
-                        <p class="section3-card-info-data">9/25/2015</p>
                     </div>
-                </div>
-                <div class="section3-card">
-                    <img src="img/IMAGE (5).png" alt="">
-                    <p class="section3-card-title">Through the Mist</p>
-                    <p class="section3-card-text">Travel makes you see what a tiny place you occupy in the world.</p>
-                    <div class="section3-card-info">
-                        <div class="section3-card-info-left">
-                            <img src="img/AVA2.png" alt="">
-                            <p class="section3-card-info-name">William Wong</p>
+                    <div class="section3-card">
+                        <a href="#" class="section3-card-main">
+                            <img class="section3-card-img" src="img/IMAGE (5).png" alt="">
+                            <p class="section3-card-category">Category</p>
+                            <p class="section3-card-title">Through the Mist</p>
+                            <p class="section3-card-text">Travel makes you see what a tiny place you occupy in the
+                                world.</p>
+                        </a>
+                        <div class="section3-card-info">
+                            <a href="#" class="section3-card-info-left">
+                                <img class="section3-card-info-left-ava" src="img/AVA2.png" alt="">
+                                <p class="section3-card-info-name">William Wong</p>
+                            </a>
+                            <p class="section3-card-info-data">9/25/2015</p>
                         </div>
-                        <p class="section3-card-info-data">9/25/2015</p>
                     </div>
-                </div>
-                <div class="section3-card">
-                    <img src="img/IMAGE (6).png" alt="">
-                    <p class="section3-card-title">Awaken Early</p>
-                    <p class="section3-card-text">Not all those who wander are lost.</p>
-                    <div class="section3-card-info">
-                        <div class="section3-card-info-left">
-                            <img src="img/AVA.png" alt="">
-                            <p class="section3-card-info-name">Mat Vogels</p>
+                    <div class="section3-card">
+                        <a href="#" class="section3-card-main">
+                            <img class="section3-card-img" src="img/IMAGE (6).png" alt="">
+                            <p class="section3-card-category">Category</p>
+                            <p class="section3-card-title">Awaken Early</p>
+                            <p class="section3-card-text">Not all those who wander are lost.</p>
+                        </a>
+                        <div class="section3-card-info">
+                            <a href="#" class="section3-card-info-left">
+                                <img class="section3-card-info-left-ava" src="img/AVA.png" alt="">
+                                <p class="section3-card-info-name">Mat Vogels</p>
+                            </a>
+                            <p class="section3-card-info-data">9/25/2015</p>
                         </div>
-                        <p class="section3-card-info-data">9/25/2015</p>
                     </div>
-                </div>
-                <div class="section3-card">
-                    <img src="img/IMAGE (7).png" alt="">
-                    <p class="section3-card-title">Try it Always</p>
-                    <p class="section3-card-text">The world is a book, and those who do not travel read only one page.
-                    </p>
-                    <div class="section3-card-info">
-                        <div class="section3-card-info-left">
-                            <img src="img/AVA.png" alt="">
-                            <p class="section3-card-info-name">Mat Vogels</p>
+                    <div class="section3-card">
+                        <a href="#" class="section3-card-main">
+                            <img class="section3-card-img" src="img/IMAGE (7).png" alt="">
+                            <p class="section3-card-category">Category</p>
+                            <p class="section3-card-title">Try it Always</p>
+                            <p class="section3-card-text">The world is a book, and those who do not travel read only one
+                                page.</p>
+                        </a>
+                        <div class="section3-card-info">
+                            <a href="#" class="section3-card-info-left">
+                                <img class="section3-card-info-left-ava" src="img/AVA.png" alt="">
+                                <p class="section3-card-info-name">Mat Vogels</p>
+                            </a>
+                            <p class="section3-card-info-data">9/25/2015</p>
                         </div>
-                        <p class="section3-card-info-data">9/25/2015</p>
                     </div>
+
+
+
+
                 </div>
+
             </div>
         </section>
     </main>
     <footer>
         <div class="footer-intro">
-            <div class="container footer-intro-content">
-                <h4 class="footer-intro-title">Stay in Touch</h4>
-                <div class="footer-intro-bottom">
-                    <input placeholder="Enter your email address" class="footer-intro-search" type="text">
-                    <button class="footer-intro-button">Submit</button>
+            <div class="container">
+                <div class="footer-intro-content">
+                    <h4 class="footer-intro-title">Stay in Touch</h4>
+                    <div class="footer-intro-bottom">
+                        <input placeholder="Enter your email address" class="footer-intro-search" type="text">
+                        <button class="footer-intro-button">Submit</button>
+                    </div>
                 </div>
             </div>
         </div>
         <nav class="footer-nav">
-            <div class="container footer-nav-content">
-                <a class="footer-nav-title" href="">Escape.</a>
-                <ul class="footer-nav-list">
-                    <li><a href="" class="footer-nav-link">Home</a></li>
-                    <li><a href="" class="footer-nav-link">Categories</a></li>
-                    <li><a href="" class="footer-nav-link">About</a></li>
-                    <li><a href="" class="footer-nav-link">Contact</a></li>
-                </ul>
+            <div class="container">
+                <div class="footer-nav-content">
+                    <a class="footer-nav-title" href="">Escape.</a>
+                    <ul class="footer-nav-list">
+                        <li><a href="" class="footer-nav-link">Home</a></li>
+                        <li><a href="" class="footer-nav-link">Categories</a></li>
+                        <li><a href="" class="footer-nav-link">About</a></li>
+                        <li><a href="" class="footer-nav-link">Contact</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </footer>
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
